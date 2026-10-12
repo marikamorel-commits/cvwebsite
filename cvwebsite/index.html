@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minu CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div>
+<h1>Nimi Nimi</h1>
+<p>Sotsiaaltöö</p>
+</div>
+<div class="photo">
+foto
+</div>
+</header>
+<main class="cv-content">
+<aside class="sidebar">
+<section>
+<h2>Kontaktid</h2>
+<p>E-mail: niminimi@gmail.com</p>
+<p>Telefon: +372 51122334</p>
+<p>Elukoht: Tallinn</p>
+</section>
+
+<section>
+<h2>Oskused</h2>
+<p>Hea suhtleja</p>
+<p>Meeskonnatöö</p>
+<p>Hea planeerimisoskus</p>
+</section>
+
+<section>
+<h2>Lisakompetensid</h2>
+<p>Empaatia ja kannatlikus</p>
+<p>Vastutustundlikus</p>
+<p>Arvuti kasutamise oskus</p>
+</section>
+
+<section>
+<h2>Keeled</h2>
+<p>Eesti keel, vene keel</p>
+</section>
+</aside>
+
+<div class="main-info" >
+<section>
+    <h2>Minust</h2>
+<p> Olen sõbralik ja abivalmis inimene.
+    Mulle meeldib töötada inimestega ja leida lahendusi erinevatele olukordadele.
+    Pean oluliseks head suhtlemisoskust, empaatiaat ja meeskonnatööd.
+    Soovin oma teadmisi ja oskusi sotsiaalvaldkonnas edasi arendada.
+</p>
+</section>
+
+    </section>
+    <section>
+        <h2>Hariduskäik</h2>
+        <p>2024-... Tallinna Tehnikakõrgkool</p>
+        <p>2016-2019 Ida-Virumaa Kutsehariduskeskus</p>
+        <p>1999-2008 Ühisgümnaasium</p>
+    </section>
+
+    <section>
+<h2>Töökogemus</h2>
+<p>2012-2015 Baaridaam</p>
+<p>2015-2017 Vahetusvanem</p>
+<p>2017-2019 Operaator</p>
+    </section>
+    
+</div>
+</main>
+<footer class="footer">
+    <button class="contact-button">Võta minuga ühendust</button>
+    
+<div class="footer-icons">
+        <button class="icon-button"
+            onclick="if (navigator.share) { navigator.share({title: document.title, url: window.location.href}); } else { navigator.clipboard.writeText(window.location.href); alert('Link kopeeritud!'); }"
+            aria-label="Jaga CV-d"
+            title="Jaga CV-d">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <path d="M8.7 10.6 15.3 6.4"></path>
+                <path d="m8.7 13.4 6.6 4.2"></path>
+            </svg>
+        </button>
+
+        <a href="cv.pdf" class="icon-button"
+            download aria-label="Laadi CV alla"
+            title="Laadi CV alla">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12"></path>
+                <path d="m7 10 5 5 5-5"></path>
+                <path d="M5 20h14"></path>
+            </svg>
+        </a>
+    </div>
+</footer>
+    
+</footer>   
+</body>
+</html>
