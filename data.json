@@ -1,0 +1,16 @@
+
+{
+  "firstName": "Nimi",
+  "lastName": "Nimi",
+  "age": 34,
+  "email": "niminimi@gmail.com",
+  "skills": [
+    "Hea suhtleja",
+    "Meeskonnatöö",
+    "Hea planeerimisoskus"
+],
+  "languages": [
+    "Eesti keel",
+    "Vene keel"
+  ]
+}
