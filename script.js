@@ -24,6 +24,7 @@ fetch("data.json")
 
         document.getElementById("email").textContent = data.email;
         document.getElementById("age").textContent = data.age;
+        console.log("age loaded:" , data.age);
 
         data.skills.forEach(skill => {
             const p = document.createElement("p");
