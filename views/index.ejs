@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= cv.firstName %> <%= cv.lastName %> – CV</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header>
+        <h1><%= cv.firstName %> <%= cv.lastName %></h1>
+        <p>Minu CV</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Kontaktandmed</h2>
+            <p><strong>E-post:</strong> <%= cv.email %></p>
+            <p><strong>Vanus:</strong> <%= cv.age %></p>
+        </section>
+
+        <section>
+            <h2>Minu oskused</h2>
+            <ul>
+                <% cv.skills.forEach(function(skill) { %>
+                    <li><%= skill %></li>
+                <% }); %>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Keeleoskus</h2>
+            <ul>
+                <% cv.languages.forEach(function(language) { %>
+                    <li><%= language %></li>
+                <% }); %>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Minu CV – <%= cv.firstName %> <%= cv.lastName %></p>
+    </footer>
+
+</body>
+</html>
